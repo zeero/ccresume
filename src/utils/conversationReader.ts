@@ -15,9 +15,9 @@ interface PaginationOptions {
 
 
 // Helper function to convert project path to Claude directory name
-function pathToClaudeDir(path: string): string {
-  // Claude's conversion: / or \ becomes -, and . also becomes -
-  return path.replace(/[/\\.]/g, '-');
+export function pathToClaudeDir(path: string): string {
+  // Claude's conversion: /, \, ., and _ all become -
+  return path.replace(/[/\\._]/g, '-');
 }
 
 // Get paginated conversations with lazy loading
