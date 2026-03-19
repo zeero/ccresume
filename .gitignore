@@ -1,5 +1,5 @@
 node_modules/
-dist/
+# dist/ は GitHub 経由の npm install -g に必要なためコミット対象
 *.log
 .DS_Store
 .env

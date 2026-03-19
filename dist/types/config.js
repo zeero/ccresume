@@ -1,0 +1,21 @@
+export const defaultConfig = {
+    command: 'claude',
+    keybindings: {
+        quit: ['q'],
+        selectPrevious: ['up'],
+        selectNext: ['down'],
+        confirm: ['enter'],
+        copySessionId: ['c'],
+        scrollUp: ['k'],
+        scrollDown: ['j'],
+        scrollPageUp: ['u', 'pageup'],
+        scrollPageDown: ['d', 'pagedown'],
+        scrollTop: ['g'],
+        scrollBottom: ['G'],
+        pageNext: ['right'],
+        pagePrevious: ['left'],
+        startNewSession: ['n'],
+        openCommandEditor: ['-'],
+        toggleFullView: ['f'],
+    },
+};
