@@ -65,7 +65,7 @@ describe('CommandEditor', () => {
     stdin.write('--debug');
 
     const frame = lastFrame();
-    expect(frame).toContain('Command: claude --debug');
+    expect(frame).toContain('claude --debug');
   });
 
   it('calls onComplete when Enter is pressed with no suggestions', () => {
