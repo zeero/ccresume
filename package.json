@@ -1,5 +1,5 @@
 {
-  "name": "@sasazame/ccresume",
+  "name": "@zeero/ccresume",
   "version": "1.0.0",
   "description": "A TUI tool for browsing and resuming Claude Code conversations",
   "type": "module",
@@ -29,12 +29,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sasazame/ccresume.git"
+    "url": "git+https://github.com/zeero/ccresume.git"
   },
   "bugs": {
-    "url": "https://github.com/sasazame/ccresume/issues"
+    "url": "https://github.com/zeero/ccresume/issues"
   },
-  "homepage": "https://github.com/sasazame/ccresume#readme",
+  "homepage": "https://github.com/zeero/ccresume#readme",
   "dependencies": {
     "@iarna/toml": "^2.2.5",
     "clipboardy": "^5.0.0",

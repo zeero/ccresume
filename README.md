@@ -28,13 +28,13 @@ ccresume provides an interactive terminal interface to browse and manage your Cl
 ### Via npx (Recommended)
 
 ```bash
-npx @sasazame/ccresume@latest
+npx @zeero/ccresume@latest
 ```
 
 ### Global Installation
 
 ```bash
-npm install -g @sasazame/ccresume
+npm install -g @zeero/ccresume
 ```
 
 ## Usage
@@ -48,7 +48,7 @@ ccresume
 Or if using npx:
 
 ```bash
-npx @sasazame/ccresume@latest
+npx @zeero/ccresume@latest
 ```
 
 ### Command Line Options
@@ -262,7 +262,7 @@ MIT
 
 ## Support
 
-For issues and feature requests, please use the [GitHub issue tracker](https://github.com/sasazame/ccresume/issues).
+For issues and feature requests, please use the [GitHub issue tracker](https://github.com/zeero/ccresume/issues).
 
 ## 🐞 Known Issues
 
@@ -270,9 +270,9 @@ Below are known issues and limitations. Contributions and suggestions are welcom
 
 | No. | Title | Description | Issue |
 |:---:|:------|:-------------|:-----|
-| 1 | **Incomplete conversation history restoration on resume** | When resuming with ccresume, sometimes, only the tail end of the history is restored. Although the interactive `claude -r` can restore full history. Workaround: use `claude -r` interactively or `claude -c`. | [#2](https://github.com/sasazame/ccresume/issues/2) |
-| 2 | **~~Restore original console state after exiting ccresume~~** | ~~Exiting `ccresume` leaves the chat selection interface visible and hides previous terminal content.~~ **This is fixed in v0.3.1**: Terminal scrollback buffer is now preserved when exiting. | [#3](https://github.com/sasazame/ccresume/issues/3) |
+| 1 | **Incomplete conversation history restoration on resume** | When resuming with ccresume, sometimes, only the tail end of the history is restored. Although the interactive `claude -r` can restore full history. Workaround: use `claude -r` interactively or `claude -c`. | [#2](https://github.com/zeero/ccresume/issues/2) |
+| 2 | **~~Restore original console state after exiting ccresume~~** | ~~Exiting `ccresume` leaves the chat selection interface visible and hides previous terminal content.~~ **This is fixed in v0.3.1**: Terminal scrollback buffer is now preserved when exiting. | [#3](https://github.com/zeero/ccresume/issues/3) |
 | 3 | **Resume ordering may be incorrect** | For performance issue, `ccresume` sorts logs by file system timestamps (not chat content), so display order may not match actual chronology after migration. Workaround: preserve file timestamps. | – |
-| 4 | **Windows native terminal limitations** | On Windows native terminals, interactive features may have limited functionality due to terminal input handling differences. Temporarily, in the Windows native environment, a warning message will be displayed before startup. | [#32](https://github.com/sasazame/ccresume/issues/32) |
+| 4 | **Windows native terminal limitations** | On Windows native terminals, interactive features may have limited functionality due to terminal input handling differences. Temporarily, in the Windows native environment, a warning message will be displayed before startup. | [#32](https://github.com/zeero/ccresume/issues/32) |
 
 Remember: This is an unofficial tool. For official Claude Code support, please refer to Anthropic's documentation.

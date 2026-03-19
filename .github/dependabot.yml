@@ -9,7 +9,7 @@ updates:
       time: "04:00"
     open-pull-requests-limit: 5
     reviewers:
-      - "sasazame"
+      - "zeero"
     labels:
       - "dependencies"
       - "npm"
@@ -47,7 +47,7 @@ updates:
       day: "monday"
       time: "04:00"
     reviewers:
-      - "sasazame"
+      - "zeero"
     labels:
       - "dependencies"
       - "github-actions"

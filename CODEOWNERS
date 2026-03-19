@@ -3,23 +3,23 @@
 # Later matches take precedence
 
 # Default owner for everything in the repo
-* @sasazame
+* @zeero
 
 # Documentation
-*.md @sasazame
-docs/ @sasazame
+*.md @zeero
+docs/ @zeero
 
 # CI/CD configuration
-.github/ @sasazame
-*.yml @sasazame
-*.yaml @sasazame
+.github/ @zeero
+*.yml @zeero
+*.yaml @zeero
 
 # Source code
-src/ @sasazame
-tests/ @sasazame
+src/ @zeero
+tests/ @zeero
 
 # Configuration files
-package.json @sasazame
-tsconfig.json @sasazame
-.eslintrc* @sasazame
-.prettierrc* @sasazame
+package.json @zeero
+tsconfig.json @zeero
+.eslintrc* @zeero
+.prettierrc* @zeero

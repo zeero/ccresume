@@ -85,14 +85,14 @@ Examples:
 
 Configuration:
   Key bindings can be customized in: ~/.config/ccresume/config.toml
-  See example: https://github.com/sasazame/ccresume/blob/develop/config.toml.example
+  See example: https://github.com/zeero/ccresume/blob/develop/config.toml.example
   
   Note: When new features are added that conflict with your custom key bindings,
   you'll need to either:
     - Add the new key binding explicitly to your config.toml
     - Remove/modify the conflicting custom key binding
   
-For more info: https://github.com/sasazame/ccresume`);
+For more info: https://github.com/zeero/ccresume`);
   process.exit(0);
 }
 
@@ -113,7 +113,7 @@ if (process.platform === 'win32') {
   console.log('📝 Notice for Windows users: If terminal doesn\'t accept input after Claude Code starts,');
   console.log('   press ENTER once to activate input.');
   console.log('   This is a temporary workaround for a known Windows environment issue.');
-  console.log('   For details, see GitHub issue: https://github.com/sasazame/ccresume/issues/32');
+  console.log('   For details, see GitHub issue: https://github.com/zeero/ccresume/issues/32');
   console.log('');
   
   // Use spawn with inherited stdio to ensure proper pause behavior
