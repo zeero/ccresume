@@ -100,6 +100,21 @@ quit = ["esc"]
       consoleErrorSpy.mockRestore();
     });
 
+    it('should use custom command from config', () => {
+      mockHomedir.mockReturnValue('/home/user');
+      mockExistsSync.mockReturnValue(true);
+      mockReadFileSync.mockReturnValue('command = "my-claude"');
+      const config = loadConfig();
+      expect(config.command).toBe('my-claude');
+    });
+
+    it('should fall back to default command when not specified', () => {
+      mockHomedir.mockReturnValue('/home/user');
+      mockExistsSync.mockReturnValue(false);
+      const config = loadConfig();
+      expect(config.command).toBe('claude');
+    });
+
     it('should handle file read errors gracefully', () => {
       mockHomedir.mockReturnValue('/home/user');
       mockExistsSync.mockReturnValue(true);

@@ -40,7 +40,11 @@ export function loadConfig(): Config {
 
 function mergeConfigs(defaultConf: Config, userConf: Partial<Config>): Config {
   const merged: Config = JSON.parse(JSON.stringify(defaultConf));
-  
+
+  if (userConf.command !== undefined) {
+    merged.command = userConf.command;
+  }
+
   // First, apply user configuration
   if (userConf.keybindings) {
     Object.keys(userConf.keybindings).forEach((key) => {

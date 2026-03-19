@@ -76,7 +76,7 @@ const App: React.FC<AppProps> = ({ claudeArgs = [], currentDirOnly = false, hide
     statusMsg: string,
     actionType: 'resume' | 'start'
   ) => {
-    const commandStr = `claude ${args.join(' ')}`;
+    const commandStr = `${config.command} ${args.join(' ')}`;
     setStatusMessage(statusMsg);
     
     setTimeout(() => {
@@ -119,7 +119,7 @@ const App: React.FC<AppProps> = ({ claudeArgs = [], currentDirOnly = false, hide
             console.log(`You can manually run:`);
             console.log(`  cd "${conversation.projectPath}"`);
             const argsStr = claudeArgs.length > 0 ? claudeArgs.join(' ') + ' ' : '';
-            console.log(`  claude ${argsStr}--resume ${conversation.sessionId}`);
+            console.log(`  ${config.command} ${argsStr}--resume ${conversation.sessionId}`);
           } catch (clipErr) {
             console.error('Failed to copy to clipboard:', clipErr instanceof Error ? clipErr.message : String(clipErr));
           }
@@ -241,7 +241,7 @@ const App: React.FC<AppProps> = ({ claudeArgs = [], currentDirOnly = false, hide
       const selectedConv = conversations[selectedIndex];
       if (selectedConv) {
         const commandArgs = [...editedArgs, '--resume', selectedConv.sessionId];
-        const commandStr = `claude ${commandArgs.join(' ')}`;
+        const commandStr = `${config.command} ${commandArgs.join(' ')}`;
         executeClaudeCommand(
           selectedConv, 
           commandArgs, 

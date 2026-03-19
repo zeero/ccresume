@@ -1,6 +1,10 @@
 # ccresume configuration file
 # Copy this file to ~/.config/ccresume/config.toml and customize as needed
 
+# Base command to execute when resuming or starting a session.
+# Useful for custom wrappers or alternative installations.
+# command = "claude"
+
 [keybindings]
 # Exit the application
 quit = ["q"]

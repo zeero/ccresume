@@ -18,10 +18,12 @@ export interface KeyBindings {
 }
 
 export interface Config {
+  command: string;
   keybindings: KeyBindings;
 }
 
 export const defaultConfig: Config = {
+  command: 'claude',
   keybindings: {
     quit: ['q'],
     selectPrevious: ['up'],
